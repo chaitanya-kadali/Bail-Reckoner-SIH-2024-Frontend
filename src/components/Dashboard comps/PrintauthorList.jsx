@@ -24,7 +24,14 @@ const fetchfulldetails = async (email) => {
     return null; // Return null if there's an error
   }
 };
+const details={
+    caseNumber: "FIR123456",
+    charges: "Section 420 IPC (Cheating)",
+    courtName: "District Court, Delhi",
+    dateOfArrest: "2023-08-15",
+    groundsForBail: "First-time offender, sole breadwinner of family."
 
+}
 function rejectclick(e)
 {
   console.log('clicked on reject');
@@ -48,34 +55,34 @@ async function approveClick(presentmail)
   }
 }
 
-const handleSubmit = async(presentmail) => {
-  console.log(`Feedback Submitted: ${feedback} you can reject ${presentmail}`);
-  setrejected(false);  // Hide the feedback form after submission
-  setFeedback('');     // Optionally clear the feedback after submission
-  try {
-    const response = await axios.post('http://localhost:5002/api/make-it-LArejected', { Email_ID: presentmail }); 
-    if (response.data.success) {
-      console.log("success rejected");
-    }else{
-      console.log("failure rejection");
-    }
-  } catch (error) {
-    console.log("Error: ", error);
-  }
+// const handleSubmit = async(presentmail) => {
+//   console.log(`Feedback Submitted: ${feedback} you can reject ${presentmail}`);
+//   setrejected(false);  // Hide the feedback form after submission
+//   setFeedback('');     // Optionally clear the feedback after submission
+//   try {
+//     const response = await axios.post('http://localhost:5002/api/make-it-LArejected', { Email_ID: presentmail }); 
+//     if (response.data.success) {
+//       console.log("success rejected");
+//     }else{
+//       console.log("failure rejection");
+//     }
+//   } catch (error) {
+//     console.log("Error: ", error);
+//   }
 
-  try {
-    const response = await axios.post('http://localhost:5002/api/startup-feedback-post', { Email: presentmail , feedback:feedback }); 
-    if (response.data.success) {
-      console.log("successfully feedback sent");
-    }else{
-      console.log("failure feedback sending",response.data.message);
-    }
-  } catch (error) {
-    console.log("Error: ", error);
-  }
-  window.location.reload();
+//   try {
+//     const response = await axios.post('http://localhost:5002/api/startup-feedback-post', { Email: presentmail , feedback:feedback }); 
+//     if (response.data.success) {
+//       console.log("successfully feedback sent");
+//     }else{
+//       console.log("failure feedback sending",response.data.message);
+//     }
+//   } catch (error) {
+//     console.log("Error: ", error);
+//   }
+//   window.location.reload();
 
-};
+// };
 const handleInputChange = (e) => {
   setFeedback(e.target.value);  // Update the feedback state as the user types
 };
@@ -102,53 +109,45 @@ const handleInputChange = (e) => {
     setVisibleIndex(visibleIndex === index ? null : index);
 
   };
-  async function pendingAssign(presentmail)
-  {
-    console.log("you can assign drug inspector",presentmail); // /make-it-assign  Email_ID
-    try {
-      const response = await axios.post('http://localhost:5002/api/make-it-assign', { Email_ID: presentmail }); 
-      if (response.data.success) {
-        console.log("success pending assign");
-      }else{
-        console.log("failure pending assin");
-      }
-      window.location.reload();
-    } catch (error) {
-      console.log("Error: ", error);
-    }
+  // async function pendingAssign(presentmail)
+  // {
+  //   console.log("you can assign drug inspector",presentmail); // /make-it-assign  Email_ID
+  //   try {
+  //     const response = await axios.post('http://localhost:5002/api/make-it-assign', { Email_ID: presentmail }); 
+  //     if (response.data.success) {
+  //       console.log("success pending assign");
+  //     }else{
+  //       console.log("failure pending assin");
+  //     }
+  //     window.location.reload();
+  //   } catch (error) {
+  //     console.log("Error: ", error);
+  //   }
 
-  }
+  // }
 
   return (
           <div className="author-container">
                   {startupmails.map((eachemailobj, index) => {
-                          const details = fullStartupDetail[index]; // Fetch the details based on the index
+                         
                           return (
                                     <div key={index} className="author-item">
                                       <div 
                                         onClick={() => toggleDetails(index)} 
                                         className="author-header"
                                       >
-                                        <p className="author-name"> {details ? details.companyName : 'Loading...'} </p>
-                                        <p className="author-email">{eachemailobj.Email_ID}</p>
+                                        <p className="author-name"> {eachemailobj} </p>
                                       </div>
                               
                                       {visibleIndex === index && (
                                         <div className="author-details">
                                           <div className='author-details-inner'>
-                                            <div className='author-details-b1'>
-                                              <p>Email: {details.Email}</p>
-                                              <p>GST no: {details.GSTno}</p>
-                                              <p>PAN no: {details.PANno}</p>
-                                              <p>Website: {details.websiteAddress}</p>
-                                              <p>Certificate Issuing Authority: {details.IssuuingAuthority}</p>
-                                            </div>
-                                            <div className='author-details-b2'>
-                                              <p>Certificate no: {details.certificateNo}</p>
-                                              <p>Date of issue: {details.CompanyDOI}</p>
-                                              <p>IE code: {details.IE_code}</p>
-                                              <p>IE Date of issue: {details.IE_DOI}</p>
-                                            </div>
+                                              <p>Email: {details.caseNumber}</p>
+                                              <p>GST no: {details.charges}</p>
+                                              <p>PAN no: {details.courtName}</p>
+                                              <p>Website: {details.dateOfArrest}</p>
+                                              <p>Certificate Issuing Authority: {details.groundsForBail}</p>
+                                          
                                           </div>
                               
                                           <div className='author-details-buttons'>

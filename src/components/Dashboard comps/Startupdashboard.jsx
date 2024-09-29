@@ -117,24 +117,24 @@ export default function Startupdashboard() {
             >
                 Status Tracking
             </p>
-            {/* <p 
+            <p 
                 className={activeTab === 'Application' ? 'active-tab' : ''} 
                 onClick={() => { goApplication(); setActiveTab('Application'); }}
             >
                 Fill Application
-            </p>
-            <p 
+            </p> 
+             <p 
                 className={activeTab === 'Ayush' ? 'active-tab' : ''} 
                 onClick={() => { goAyush(); setActiveTab('Ayush'); }}
             >
                 Ayush Ecosystem 
             </p>
-            <p 
+           {/* <p 
                 className={activeTab === 'PeerForum' ? 'active-tab' : ''} 
                 onClick={() => { goPeerForum(); setActiveTab('PeerForum'); }}
             >
                 Peer Forum
-            </p> */}
+            </p>  */}
         </div>
         <div>
             <Logout/>

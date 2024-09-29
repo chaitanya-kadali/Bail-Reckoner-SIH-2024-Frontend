@@ -168,68 +168,31 @@ function makeiteditable(){
              {userExists ? <p style={{color:"green",fontSize:"0.9rem"}}>You have already submitted the data.<br/>You can edit now</p>
                          : <p style={{color:"red",fontSize:"0.9rem"}}>You haven't submitted the form yet. Please fill the details.</p> }
             <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label style={{fontSize:'1.5rem'}}>Details of Manufacturer</label>
-                </div>
-                    <div className="form-group">
-                    <label>(a) PAN No. of the company/Firm</label>
-                    <input 
-                        type="text" 
-                        placeholder="PAN No. of the company/Firm"  
-                        name="PANno"
-                        readOnly={!editing}
-                        value={startupdata.PANno ||""}
-                        onChange={handleChange} 
-                    />
-                    {panError && <p className="error">{panError}</p>}
+            <div className="form-group">
+                    <label style={{fontSize:'1.5rem'}} >Case Details</label>
+                   
                 </div>
                 <div className="form-group">
-                <label>(b) GST No. of the company/Firm</label>
-                    <input 
-                        type="text" 
-                        placeholder="GST No. of the company/Firm" 
-                        name="GSTno"
-                        readOnly={!editing}
-                        value={startupdata.GSTno ||""}
-                        onChange={handleChange} 
-                    />
-                    {gstError && <p className="error">{gstError}</p>}
+                    <label>(a) Case No.</label>
+                    <input type="text"readOnly={!editing} name="certificateNo" value={startupdata.certificateNo ||""} onChange={handleChange} placeholder="Enter the Case No"/>
                 </div>
                 <div className="form-group">
-                    <label>(c) Website Address</label>
-                    <input type="text"name="websiteAddress"readOnly={!editing} value={startupdata.websiteAddress ||""} onChange={handleChange} placeholder="Website Address.." />
-                </div>
-                <div className="form-group">
-                    <label style={{fontSize:'1.5rem'}}>2. Company Certification Details (If Any)</label><br />
-                    <label> Company Incorporation Certification Details</label>
-                </div>
-                <div className="form-group">
-                    <label>(a) Certificate No.</label>
-                    <input type="text"readOnly={!editing} name="certificateNo" value={startupdata.certificateNo ||""} onChange={handleChange} placeholder="Enter company certificate no"/>
-                </div>
-                <div className="form-group">
-                    <label>(b) Date of Issue</label>
-                    <input type="date"readOnly={!editing} name="CompanyDOI" value={startupdata.CompanyDOI ||""} onChange={handleChange}/>
+                    <label>(b)Charges</label>
+                    <input type="text"readOnly={!editing} name="CompanyDOI" value={startupdata.CompanyDOI ||""} onChange={handleChange} placeholder="Enter Charges"/>
                 </div>
                 <div  className="form-group">
-                    <label>(c) Issuing Authority</label>
-                    <input type="text" readOnly={!editing}name="IssuuingAuthority" value={startupdata.IssuuingAuthority ||""}onChange={handleChange} placeholder="Enter name of issuing authority" />
+                    <label>(c)CourtName</label>
+                    <input type="text" readOnly={!editing}name="IssuuingAuthority" value={startupdata.IssuuingAuthority ||""}onChange={handleChange} placeholder="Enter the court name" />
                     </div>
                 <div className="form-group">
-                    <label style={{fontSize:'1.5rem'}} >3. Details of IE Code by DGFT</label>
+                    <label>(a)Date of Arrest</label>
+                    <input type="date" readOnly={!editing} name="IE_code" value={startupdata.IE_code ||""} onChange={handleChange} />
                 </div>
                 <div className="form-group">
-                    <label>(a) IE Code</label>
-                    <input type="text" readOnly={!editing} name="IE_code" value={startupdata.IE_code ||""} onChange={handleChange} placeholder='Enter IE Code' />
+                    <label>(b)Grounds for Bail</label>
+                    <input type="text" name="IE_DOI" readOnly={!editing} value={startupdata.IE_DOI ||""} onChange={handleChange} placeholder="Enter Grounds for bail"/>
                 </div>
-                <div className="form-group">
-                    <label>(b) IE code Date of Issue</label>
-                    <input type="date" name="IE_DOI" readOnly={!editing} value={startupdata.IE_DOI ||""} onChange={handleChange}/>
-                </div>
-                <div className="form-group">
-                    <label style={{fontSize:'1.5rem'}} >4. Purpose of Applying*</label>
-                    <label > <span style={{color:"blue"}}>{userExists ? "EXISTING" : "NEW" } </span> (automatic detection) </label>
-                </div>
+               
                 <div>
                     <label id="ll32">Captcha</label><br/>
                   <span id="captcha">{captcha}</span><br/>

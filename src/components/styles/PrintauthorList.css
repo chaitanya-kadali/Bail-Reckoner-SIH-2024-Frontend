@@ -71,9 +71,7 @@
     background-color: #0056b3;
   }
   .author-details-inner{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+   text-align: center;
   }
   #feedback-inp{
      border:none;
