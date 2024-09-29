@@ -15,7 +15,7 @@ body{
 .home-main{
     min-height: 400px;         
     max-height: 1000px;
-    margin-top:10px;
+    padding-top:150px;
     display:grid;
    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
    position:relative;
@@ -69,7 +69,8 @@ body{
     margin-bottom: 20px;
 }
 #home-main-img3{
-    height: 130px;
+    height: 120px;
+    width:140px;
     margin-top: 20px;
     border-radius: 50%;
     margin-bottom: 20px;

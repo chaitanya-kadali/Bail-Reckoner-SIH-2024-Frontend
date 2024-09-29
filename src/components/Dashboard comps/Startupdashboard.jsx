@@ -22,10 +22,10 @@ export default function Startupdashboard() {
    let decemail= values.get('email');
 //    console.log(decemail);
   let email= atob(decemail);
-   if(!email.endsWith('@gmail.com'))
-   {
-   return( <h1 style={{ textAlign: 'center' }}>Email Should be valid</h1>);
-   }
+//    if(!email.endsWith('@gmail.com'))
+//    {
+//    return( <h1 style={{ textAlign: 'center' }}>Email Should be valid</h1>);
+//    }
    let token= values.get('token');
    const [activeTab, setActiveTab] = useState('Status');
    useEffect(()=>{
@@ -73,15 +73,15 @@ export default function Startupdashboard() {
             fetch_it();
         }
     },[]);
-   if(!tokenvalidation){
-    return(<h1>Error 404</h1>)
-   }
+//    if(!tokenvalidation){
+//     return(<h1>Error 404</h1>)
+//    }
   
 //    console.log(email);  
-   if(!email.endsWith('@gmail.com'))
-   {
-   return( <h1 style={{ textAlign: 'center' }}>Email Should be valid</h1>);
-   }
+//    if(!email.endsWith('@gmail.com'))
+//    {
+//    return( <h1 style={{ textAlign: 'center' }}>Email Should be valid</h1>);
+//    }
     function goStatus()
     {
        
@@ -117,7 +117,7 @@ export default function Startupdashboard() {
             >
                 Status Tracking
             </p>
-            <p 
+            {/* <p 
                 className={activeTab === 'Application' ? 'active-tab' : ''} 
                 onClick={() => { goApplication(); setActiveTab('Application'); }}
             >
@@ -134,7 +134,7 @@ export default function Startupdashboard() {
                 onClick={() => { goPeerForum(); setActiveTab('PeerForum'); }}
             >
                 Peer Forum
-            </p>
+            </p> */}
         </div>
         <div>
             <Logout/>

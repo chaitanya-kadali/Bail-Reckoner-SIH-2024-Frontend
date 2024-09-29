@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../styles/Startuptrackpad.css';
 
 const Startuptrackpad = ({email}) => {
-  const [currentStage, setCurrentStage] = useState(0); // Change this value to update the progress
+  const [currentStage, setCurrentStage] = useState(2); // Change this value to update the progress
   const [statusInfo, setStatusInfo] = useState({
     Email_ID:"",  // startup s email
     FilledApplication : false,
@@ -18,10 +18,10 @@ const Startuptrackpad = ({email}) => {
   
   const stages = [
     { title: 'Stage 1: Application Submitted', description: 'Your application has been submitted.' },
-    { title: 'Stage 2: Application Accepted', description: 'Your application has been Accepted by Licensing authority' },
+    { title: 'Stage 2: Lawyer', description: 'Your application has been Accepted by Licensing authority' },
     { title: 'Stage 3: DrugInspector Assigned', description: 'Nearby Drug inspector is assigned for your company' },
     { title: 'Stage 4: DrugInspector Accepted', description: 'Drug inspector verified and Accepted' },
-    { title: 'Stage 5: License Approved', description: 'Congratulations.Your License has been issued.' },
+    { title: 'Stage 5: Bail Approved', description: 'Congratulations.Your Bail has been issued.' },
   ];
   
   useEffect(() => {
