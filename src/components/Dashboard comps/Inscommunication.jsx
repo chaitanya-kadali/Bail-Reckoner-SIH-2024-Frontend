@@ -60,7 +60,7 @@ export default function Inscommunication({email}) {
    <>
    <div className='ins-cont'>
    <div className="ins-main">
-    <p className="ins-head">Communication with Licensing Authority</p>
+    <p className="ins-head">Communication with Lawyer</p>
     <p className="ins-feed">Feedback:</p>
      
      { feedback.length===0 ? <p className="paragraph"> There are no feedbacks yet. </p>
