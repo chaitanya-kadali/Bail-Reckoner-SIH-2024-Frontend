@@ -11,6 +11,7 @@ import Extrafeatures from './Extrafeatures';
 import PeerForum from './PeerForum';
 import Footer from './Footer';
 import Logout from './Logout';
+import BailPrediction from './Prediction';
 
 export default function Startupdashboard() {
     //1 is doctor
@@ -115,26 +116,26 @@ export default function Startupdashboard() {
                 className={activeTab === 'Status' ? 'active-tab' : ''} 
                 onClick={() => { goStatus(); setActiveTab('Status'); }}
             >
-                Status Tracking
+               Bail Status Tracking
             </p>
             <p 
                 className={activeTab === 'Application' ? 'active-tab' : ''} 
                 onClick={() => { goApplication(); setActiveTab('Application'); }}
             >
-                Fill Application
+                Bail Application
             </p> 
              <p 
                 className={activeTab === 'Ayush' ? 'active-tab' : ''} 
                 onClick={() => { goAyush(); setActiveTab('Ayush'); }}
             >
-                Ayush Ecosystem 
-            </p>
-           {/* <p 
+            Lawyer Communication 
+                       </p>
+           <p 
                 className={activeTab === 'PeerForum' ? 'active-tab' : ''} 
                 onClick={() => { goPeerForum(); setActiveTab('PeerForum'); }}
             >
-                Peer Forum
-            </p>  */}
+                Predict The Acceptance
+            </p> 
         </div>
         <div>
             <Logout/>
@@ -144,7 +145,7 @@ export default function Startupdashboard() {
         {value === 1 ? (<Startuptrackpad email={email} />) :
             (value === 2 ? (<StartupApplication email={email} />) :
                 (value === 3 ? (<Extrafeatures email={email} />) :
-                    (value === 4 ? (<PeerForum email={email} />) : (null))
+                    (value === 4 ? (<BailPrediction />) : (null))
                 )
             )
         }
