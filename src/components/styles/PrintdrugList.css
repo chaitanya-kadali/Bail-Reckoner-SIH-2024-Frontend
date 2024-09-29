@@ -1,0 +1,73 @@
+
+.Drugp-container {
+    max-width: 50vw;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color:rgb(255, 255, 255);
+  }
+  
+  .Drugp-item {
+    margin-bottom: 15px;
+    
+  }
+  
+  .Drugp-header {
+    background-color: rgb(17, 66, 133) ;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    height:10vh;
+  }
+  .Drugp-header:hover{
+    background-color: rgb(4, 25, 60);
+    color:white;
+  }
+  
+  
+  .Drugp-name {
+    font-weight: bold;
+    margin: 0;
+  }
+  .Drugp-details {
+    padding: 10px;
+    border-left: 4px solid #094660;
+    border-right: 4px solid #094660;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color:rgb(0, 0, 0);
+  }
+  #Drugp-head{
+    color:black;
+    text-align: center;
+  }
+  .Drugp-btn-assign,.Drugp-btn-approve,.Drugp-btn-reject{
+    padding: 8px 12px;
+    
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .Drugp-btn-approve{
+   background-color: #10aa22;
+  }
+  .Drugp-btn-reject{
+    margin-left:10px;
+   background-color: red;
+  }
+  
+  .Drugp-btn-assign{
+    background-color: #10aa22;
+  }
+  
+  .Drugp-btn:hover {
+    background-color: #0056b3;
+  }
+  .Drugp-details-inner{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  

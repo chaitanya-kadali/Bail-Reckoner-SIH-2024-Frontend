@@ -1,0 +1,62 @@
+.home-chatbot {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px  #094660; 
+}
+
+.home-chatbot p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.home-chatbot button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgba(14,78,165,1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-chatbot button:hover {
+    /* background-color: #45a049; */
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .home-chatbot {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .home-chatbot p {
+        font-size: 1rem;
+    }
+
+    .home-chatbot button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-chatbot {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .home-chatbot p {
+        font-size: 0.9rem;
+    }
+
+    .home-chatbot button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}

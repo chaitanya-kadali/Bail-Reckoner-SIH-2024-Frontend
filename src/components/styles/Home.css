@@ -1,0 +1,135 @@
+/* header */
+body{
+    background-color: white;
+    padding:0px;
+    margin:0px;
+    border:none;
+}
+.home-head{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    color:black;
+    align-items: center;
+}
+.home-main{
+    min-height: 400px;         
+    max-height: 1000px;
+    margin-top:10px;
+    display:grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+   position:relative;
+   bottom:20px;
+   justify-content: center;
+   color:black;
+   justify-items: center;
+   align-items: center;
+}
+@media (max-width: 400px) {
+    .home-main {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Slightly smaller columns for very small screens */
+        gap: 10px; /* Adjust gap for smaller viewports */
+    }
+}
+@media (max-width: 635px) {
+    #gohometwo{
+        margin-top:150px;
+    }
+}
+.home-main div:hover{
+    /* background-color: rgb(235, 235, 235); */
+    background-color:  rgb(20, 103, 219);
+     transform:scale(1.1);
+     cursor: pointer;
+    color:white;
+}
+.home-main div:hover #home-main-signin{
+    background-color: black;
+}
+.home-main-startup,.home-main-auth,.home-main-drug {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:350px;
+    border-radius: 25px;
+    height:350px;
+    box-shadow: 0px 4px 10px  rgba(14,78,165,1); 
+    margin:10px;
+    transition: transform 0.4s ease;
+} 
+#home-main-img{
+    height: 150px;
+    border-radius: 50%;
+}
+#home-main-img2{
+    height: 140px;
+    margin-top: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#home-main-img3{
+    height: 130px;
+    margin-top: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#home-main-signin
+{
+    border:none;
+    width:90px;
+    height:50px;
+    font-weight: bold;
+    /* background-color: black; */
+    background-color: rgba(14,78,165,1);
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top:10px;
+}
+#home-main-signin:hover{
+    background-color:black;
+}
+#home-main-login
+{
+    border:none;
+    width:90px;
+    height:50px;
+    font-weight: bold;
+    color:rgb(1, 0, 0);
+    border-radius: 10px;
+    margin-top:10px;
+    margin-bottom:20px;
+    cursor: pointer;
+}
+#home-main-login:hover{
+    color:white;
+    background-color: black;
+}
+#gohometwo{
+    background-color:rgb(0, 86, 10);
+    color:white;
+    width:300px;
+    height:100px;
+    font-weight: bold;
+    font-size:1.4rem;
+    border-radius: 30px;
+    cursor:pointer;
+    transition:  1s;
+}
+#gohometwo:hover{
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+}
+
+.home-faq{
+    color:black;
+}
+.home-chatbot{
+    color:black;
+}
+
+#type-title{
+    font-family: 'RobotoMono-Bold';
+    font-size: 1.3rem;
+}

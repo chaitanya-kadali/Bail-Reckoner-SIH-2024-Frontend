@@ -1,0 +1,99 @@
+
+.author-container {
+    max-width: 50vw;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color:rgb(255, 255, 255);
+  }
+  
+  .author-item {
+    margin-bottom: 15px;
+    
+  }
+  
+  .author-header {
+    /* background-color: #094660; */
+    background-color: rgb(17, 66, 133) ;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    height:10vh;
+  }
+  .author-header:hover{
+    background-color: rgb(4, 25, 60);
+    color:rgb(255, 255, 255);
+  }
+  
+  
+  .author-name {
+    font-weight: bold;
+    margin: 0;
+  }
+  .author-email{
+    font-size: 1.4rem;
+  }
+  .author-details {
+    padding: 10px;
+    border-left: 4px solid #094660;
+    border-right: 4px solid #094660;
+    border-bottom: 4px solid #094660;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color:rgb(0, 0, 0);
+  }
+  #author-head{
+    color:black;
+    text-align: center;
+  }
+  .author-btn-assign,.author-btn-approve,.author-btn-reject{
+    padding: 8px 12px;
+    
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .author-btn-approve{
+   background-color: #10aa22;
+  }
+  .author-btn-reject{
+    margin-left:10px;
+   background-color: red;
+  }
+  
+  .author-btn-assign{
+    background-color: #10aa22;
+  }
+  
+  .notify-btn:hover {
+    background-color: #0056b3;
+  }
+  .author-details-inner{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #feedback-inp{
+     border:none;
+     width:350px;
+     box-shadow: 0 1px 1px 0.5px black;
+     border-radius: 4px;
+     height:28px;
+     margin-top:15px;
+
+  }
+  #feed-submit{
+    margin-left:15px;
+    border:none;
+    border-radius: 4px;
+    width:180px;
+    height: 35px;
+    background-color:green;
+    color:white;
+    padding-top: 5px;
+    margin-top: 15px;
+  }
+  
+  

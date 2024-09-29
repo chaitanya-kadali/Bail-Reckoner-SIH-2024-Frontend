@@ -1,0 +1,63 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Protest+Guerrilla&display=swap'); */
+
+.home-head{
+    display:flex;
+    flex-direction:row;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: space-between;
+    color:black;
+    height:90px;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    font-weight: 400;
+    background-color:rgba(14,78,165,1) ;
+    z-index:2;
+}
+.home-name{
+
+ 
+    color:rgb(255, 255, 255);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-family: 'Cust-Atmospheric';
+}
+.home-img{
+    
+    background-image: url("./ayush_logo.png");
+    /* background-size:cover; */
+    background-size: cover; /* Ensures the whole image is visible */
+    background-repeat: no-repeat;
+    border:2px white;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    height:80%;
+    width:75px;
+
+}
+.home-first{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:40vw;
+    height:100%;
+}
+.heads-button{
+  background-color:rgb(194, 229, 243);
+  margin-right:30px;
+  height: 50px;
+  width:80px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.outer-img{
+    height:85%;
+    width:82px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    margin:10px;
+    border-radius: 55%;
+}

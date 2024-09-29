@@ -1,0 +1,39 @@
+.drug-head{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin:10px;
+    color:black;
+}
+.drug-nav {
+    cursor: pointer;
+    color: #333; /* Default text color */
+    text-decoration: none; /* Remove underlines */
+    padding: 10px 15px; /* Add some padding for better spacing */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+#authority-dash-id{
+    padding-top: 100px;
+}
+.drug-nav:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    color: #000; /* Optional: change text color on hover */
+}
+.drug-main-first {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 1.2rem;
+/* Example background for the navbar */
+    padding: 10px 20px; /* Add some padding to the navbar */
+    align-items: center;
+    margin: 10px;
+}
+.drug-main{
+    background-color: #f0f0f0; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}

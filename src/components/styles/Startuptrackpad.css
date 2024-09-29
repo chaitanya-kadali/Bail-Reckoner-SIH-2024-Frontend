@@ -1,0 +1,154 @@
+ /* *{
+    margin:0px;
+  }
+  
+  .trck-container{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .trackpad {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 50px auto;
+  }
+  
+  .trackpad .stage {
+      position: relative;
+      padding: 10px 20px;
+      border-top: 4px solid #ccc;
+      text-align: center;
+      flex: 1;
+  }
+  
+  .trackpad .stage.active {
+      border-top-color: #4caf50;
+  }
+  
+  .trackpad .stage.cancelled {
+      border-top-color: red;
+  }
+  
+  .trackpad .stage:before {
+      content: '';
+      position: absolute;
+      top: -14px; 
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #ccc;
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 2px #ccc;
+  }
+  
+  .trackpad .stage.active:before {
+      background-color: #4caf50;
+      box-shadow: 0 0 0 2px #4caf50;
+  }
+  
+  .trackpad .stage.cancelled:before {
+      background-color: red;
+      box-shadow: 0 0 0 2px red;
+  }
+  
+  .trackpad .stage h4 {
+      margin: 0;
+      font-size: 16px;
+  }
+  
+  .trackpad .stage p {
+      margin: 5px 0 0;
+      font-size: 12px;
+      color: #777;
+  }
+  
+  .trackpad .stage.cancelled p {
+      color: red;
+  } */
+
+  * {
+    margin: 0;
+  }
+  
+  .trck-container {
+    width: 70%;
+    min-height: 60vh;
+    margin-left: 15%;
+  }
+  
+  .trackpad {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px auto;
+  }
+  
+  .trackpad .stage {
+    position: relative;
+    padding: 10px 20px;
+    border-top: 4px solid #ccc;
+    text-align: center;
+    flex: 1;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .trackpad .stage.active {
+    border-top-color: #4caf50; /* Green for active */
+  }
+  
+  .trackpad .stage.cancelled {
+    border-top-color: red; /* Red for cancelled */
+  }
+  
+  .trackpad .stage:before {
+    content: '';
+    position: absolute;
+    top: -14px; /* Position the circle above the line */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 2px #ccc;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .trackpad .stage.active:before {
+    background-color: #4caf50; /* Green for active */
+    box-shadow: 0 0 0 2px #4caf50;
+  }
+  
+  .trackpad .stage.cancelled:before {
+    background-color: red; /* Red for cancelled */
+    box-shadow: 0 0 0 2px red;
+  }
+  
+  .trackpad .stage h4 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .trackpad .stage p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #777;
+    transition: color 0.3s;
+  }
+  
+  .trackpad .stage.active p {
+    color: #4caf50;
+  }
+  
+  .trackpad .stage.cancelled p {
+    color: red;
+  }
+  .status-title{
+
+   padding-top:20px;
+  }
+  

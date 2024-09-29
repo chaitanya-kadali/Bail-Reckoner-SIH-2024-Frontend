@@ -1,0 +1,102 @@
+
+/* Style the container */
+.container-application {
+  max-width: 60vw; /* Set a maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  margin-top:40px;
+  background-color: #ffffff;
+  box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: left; /* Keep the text left-aligned */
+}
+
+/* Style the form header */
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style the form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+/* Style inputs in non-editing mode */
+.form-group input[readonly],
+.form-group select[readonly] {
+  background-color: rgba(0, 0, 0, 0.05); /* Semi-transparent */
+  pointer-events: none; /* Make unclickable */
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+/* Style the Edit button */
+.edit-button {
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+.edit-button.editable {
+  background-color: green; /* Green when editing mode is enabled */
+  cursor: pointer;
+}
+
+.edit-button.editable:hover {
+  background-color: darkgreen;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+#captcha{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+#captcha-regenerate{
+  border:none;
+  padding:10px 15px;
+  font-weight: bold;
+  cursor:pointer;
+  background-color: #6bebeb;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-top:10px;
+}

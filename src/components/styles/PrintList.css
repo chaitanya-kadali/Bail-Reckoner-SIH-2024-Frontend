@@ -1,0 +1,38 @@
+.card {
+    padding: 15px;
+    border-radius: 8px; /* Soft rounded corners */
+    background-color: #4caad288; /* White background */
+    box-shadow:  10px 10px 15px #2d7c9e79; /* Subtle shadow effect */
+    margin-bottom: 20px; /* Space between cards */
+    max-width: 50vw;
+   margin-left:auto;
+   margin-right:auto;
+
+}
+
+.card-row {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin-bottom: 10px; /* Space between rows */
+  
+}
+
+.name-link {
+    cursor: pointer;
+    /* color: #000000; */
+    color:black;
+    text-transform:uppercase;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.inline-block {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 540;
+}
+
+.text-end {
+    text-align: end;
+}

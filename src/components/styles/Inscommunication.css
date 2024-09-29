@@ -1,0 +1,78 @@
+ .ins-cont{
+    width: 80%;
+    margin-left: 10%;
+ }
+
+ .ins-main {
+    /* text-align: center; */
+    margin-top: 50px;
+}
+
+/* Styles for the <p> elements */
+.paragraph {
+    font-size: 1.6rem;
+    margin: 10px ;
+    color: #333; /* Dark grey color for the text */
+
+}
+
+.separator {
+    margin: 20px 0; /* Adding margin to separate sections */
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button.active {
+    background-color: green;
+    color: white;
+}
+
+.toggle-button.inactive {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.4);
+    cursor: not-allowed;
+}
+
+.input-field {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: darkblue;
+}
+.ins-head{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin:40px;
+    color: rgb(6, 6, 87);
+}
+.ins-feed{
+  font-size:2.3rem;
+  font-weight:550;
+  margin:20px;
+}

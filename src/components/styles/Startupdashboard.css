@@ -1,0 +1,46 @@
+
+.startup-dsh-head-first{
+   display: flex;
+   flex-direction: row;
+   gap:30px;
+   font-weight:bold;
+   font-size: 1.3rem;
+   margin:10px;
+   cursor:pointer;
+}
+.startup-dsh-head{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-top: 100px;
+}
+/* .startup-dsh-head-first p {
+   cursor: pointer;
+   padding: 10px 20px;
+   font-size: 16px;
+   color: #333;
+   border-bottom: 2px solid transparent; 
+   transition: border-bottom 0.3s ease-in-out;
+ }
+ 
+ .startup-dsh-head-first p:hover {
+   border-bottom: 2px solid #ccc; 
+ }
+ .active-tab {
+   border-bottom: 2px solid #007BFF;
+   font-weight: bold;
+   color: #007BFF;
+ } */
+
+ .active-tab {
+    border-bottom: 2px solid #000; /* Customize the border style */
+    padding-bottom: 5px; /* Adjust the padding to give space between text and border */
+}
+
+.startup-dsh-head-first p {
+    cursor: pointer;
+    margin-right: 20px; /* Add space between the tabs if needed */
+    padding-bottom: 5px; /* To align the tabs correctly */
+}
+
+

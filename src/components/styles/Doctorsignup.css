@@ -1,0 +1,135 @@
+.doctor-sign-head1{
+  display: flex;
+  justify-content: center;
+ margin-top: 40px;
+}
+.doctor-sign-head2{
+    padding-left: 106px;
+    padding-right: 106px;
+    background-color: gray;
+    width:570px;
+}
+.doctor-sign-container {
+  width: 700px;
+  margin: 40px auto;
+  margin-top: 0 ;
+  padding: 40px;
+  border: 1px solid #180e0e;
+  border-radius: 5px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.doctor-sign-para{
+  margin-bottom: 20px;
+  font-weight: bold ;
+  font-size: 30px;
+    margin-bottom: 0;
+   text-align: center;
+}
+
+.doctor-sign-label {
+  display: block;
+  margin-bottom: 0;
+  font-weight: bold;
+    color: #333;
+}
+
+.doctor-sign-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #907676;
+  border-radius: 5px;
+}
+
+.doctor-sign-input[type="file"] {
+  padding: 10px;
+}
+
+.doctor-sign-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.doctor-sign-button:hover {
+  background-color: #3e8e41;
+}
+.Drug-sign-error{
+  color:red;
+}
+.doctor-sign-error{
+  color: red;
+}
+/* Styles for verify buttons */
+.verify-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white; /* Ensures text is visible on colored backgrounds */
+}
+
+/* Background color changes for buttons based on state */
+
+/* Background black (for null state) */
+.bg-black {
+  background-color: black;
+}
+
+/* Background green (for true state) */
+.bg-green {
+  background-color: green;
+}
+
+/* Background red (for false state) */
+.bg-red {
+  background-color: red;
+}
+
+/* Styles for submit button */
+
+/* Submit button transparent when disabled */
+
+/* Submit button when active */
+.bg-black {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.doc-sign-submit-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color:white;
+}
+.error-text{
+  color:red;
+}
+#success-text{
+  color:green;
+}
+#doctor-pic{
+  height:90vh;
+  width:25vw;
+  position: fixed;
+}
+.doctor-flex{
+  display: flex;
+  flex-direction: row;
+  padding-top: 90px;
+}
+#doctor-sign-id{
+  padding-left: 600px;
+}

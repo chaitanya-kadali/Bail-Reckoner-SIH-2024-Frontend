@@ -1,0 +1,50 @@
+.slideshow-container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 60vh; /* Full viewport height */
+    padding-top:90px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Full-width image, covering the container */
+  #slide-img {
+    width: 100%; /* Occupies full width of the screen */
+    height: 100%; /* Occupies full height of the screen */
+    object-fit: cover; /* Ensures the image covers the container */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Style for the navigation arrows */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(0, 0, 0); /* Semi-transparent background */
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    z-index:1;
+    transition: background-color 0.3s ease;
+    opacity: 0.8;
+  }
+  
+  /* Left arrow position */
+  .prev {
+    left: 30px;
+  }
+  
+  /* Right arrow position */
+  .next {
+  right:30px;
+  }
+  
+  /* Hover effect on arrows */
+  .arrow:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
+    opacity: 1;
+  }

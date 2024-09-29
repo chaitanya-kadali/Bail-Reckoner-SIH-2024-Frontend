@@ -1,0 +1,11 @@
+#logout{
+    border:none;
+    height:30px;
+    font-size: 1.1rem;
+    margin:10px;
+    background-color: red;
+    width:90px;
+    border-radius: 10px;
+    color:white;
+    font-weight: bold;
+}

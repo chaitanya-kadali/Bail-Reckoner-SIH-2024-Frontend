@@ -1,0 +1,22 @@
+.extra-head {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 1.2rem;
+    background-color: #f0f0f0; /* Example background for the navbar */
+    padding: 10px 20px; /* Add some padding to the navbar */
+    align-items: center;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #333; /* Default text color */
+    text-decoration: none; /* Remove underlines */
+    padding: 10px 15px; /* Add some padding for better spacing */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.nav-link:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    color: #000; /* Optional: change text color on hover */
+}

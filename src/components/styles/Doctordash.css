@@ -1,0 +1,14 @@
+.doctor-dash-head{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top:10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.doc-dash-main{
+    display: flex;
+    /* justify-content: flex-end; */
+}
+.doc-dash-doc{
+    flex:1;
+}

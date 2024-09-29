@@ -1,0 +1,80 @@
+.authority-sign-head1{
+  display: flex;
+  justify-content: center;
+ margin-top: 40px;
+}
+.authority-sign-head2{
+    padding-left: 30px;
+    padding-right: 30px;
+    width:720px;
+    background-color: gray;
+}
+.authority-sign-container {
+  width: 700px;
+  margin: 40px auto;
+  margin-top: 0;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.authority-sign-para{
+margin-bottom: 20px;
+font-weight: bold ;
+font-size: 25px;
+  margin-bottom: 0;
+ text-align: center;
+}
+
+.authority-sign-label {
+  display: block;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.authority-sign-input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #746060;
+  border-radius: 5px;
+}
+
+.authority-sign-input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.authority-sign-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.authority-sign-button:hover {
+  background-color: #3e8e41;
+}
+ .authority-sign-error{
+  color: red;
+ }
+.author-flex{
+  display: flex;
+  flex-direction: row;
+  padding-top: 90px;
+}
+#author-pic{
+  height:90vh;
+  width:25vw;
+  position: fixed;
+}
+#authority-sign-id{
+  padding-left: 600px;
+}

@@ -1,0 +1,89 @@
+/* /* .bigContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1e1e; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .miniContainer {
+    width: 80%;
+    height: 95%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    background-color: #2a2a2a; 
+  }
+  
+  .mainChatContainer {
+    height: 100%;
+  }
+  
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+  }
+   */
+
+/* AiChatBot.module.css  
+
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff; /* Matches your background color
+  font-family: 'Arial', sans-serif;
+}
+
+.ChatArea {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  position: relative;
+  height: 95vh;
+  width: 99vw;
+}
+
+.MainContainer {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.ChatContainer {
+  padding: 10px;
+  background-color: #f1f5f9;
+  height: 100%;
+}
+
+.MessageList {
+  padding: 10px;
+  height: calc(100% - 70px); /* Adjusts for input field height  
+  background-color: #f1f5f9;
+}
+
+.MessageInput {
+  border: none;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+} */

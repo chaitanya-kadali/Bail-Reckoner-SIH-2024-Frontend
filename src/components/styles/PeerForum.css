@@ -1,0 +1,44 @@
+.peer-forum {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .question-card {
+    background: linear-gradient(135deg, #6fb1fc, #1e3c72);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .question-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .question-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .answers {
+    margin-top: 15px;
+  }
+  
+  .answers p {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(12, 12, 12);
+  }
+  #per-hed{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin:40px;
+    color: rgb(6, 6, 87);
+  }

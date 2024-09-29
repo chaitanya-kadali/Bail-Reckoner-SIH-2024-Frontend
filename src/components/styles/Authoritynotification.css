@@ -1,0 +1,12 @@
+.drug-noti{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top:10px;
+}
+.drug-noti-head{
+    min-height: 60vh;
+}
+.drug-noti-head li{
+    list-style-type:none;
+    font-size: 2rem;
+}
