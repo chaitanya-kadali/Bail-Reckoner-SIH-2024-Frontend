@@ -94,18 +94,18 @@ const containerStyle = {
     <p className='drug-dash-head'>Lawyer Dashboard</p>
     </div>
  <center> 
-<div style={containerStyle}>
-  <h1> Pending for judge review</h1>
+<div className='drug-con'>
+  <p id="drug-top"> Pending for judge review</p>
   <PrintdrugList data={data} />
     </div>
 
-    <div style={containerStyle}>
-  <h1>Judge Approved Bail</h1>
+    <div className='drug-con'>
+  <p id="drug-top">Judge Approved Bail</p>
   <PrintdrugList data={data2} />
     </div>
 
-    <div style={containerStyle}>
-  <h1>Judge Rejected Bail</h1>
+    <div className='drug-con'>
+  <p id="drug-top">Judge Rejected Bail</p>
   <PrintdrugList data={data3} />
     </div>
     </center> 

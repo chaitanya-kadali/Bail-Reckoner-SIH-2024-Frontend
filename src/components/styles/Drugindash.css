@@ -1,9 +1,29 @@
 .drug-dash-head{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: bold;
     margin-top:10px;
 }
 #drug-dash-id{
     padding-top: 100px;
 }
+/* styles.css */
+.drug-con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90vw;
+    background-color: rgb(194, 229, 243);
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top:20px;
+  
+  }
+  #drug-top{
+    font-size:1.6rem;
+    width:100%;
+    font-weight: bold;
+  }
+  
