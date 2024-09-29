@@ -3,11 +3,11 @@ import React,{ useState,useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import Header from './Header';
-import doctorpic from '../assets/logindoctor.jpg';
-import startuppic from '../assets/loginstartup.jpg';
-import farmerpic from '../assets/loginfarmer.jpg';
-import drugpic from '../assets/logindrug.jpg';
-import authorpic from '../assets/loginauthority.jpg';
+import doctorpic from '../assets/lawyer.jpg';
+import startuppic from '../assets/lawyer.jpg';
+import farmerpic from '../assets/lawyer.jpg';
+import drugpic from '../assets/lawyer.jpg';
+import authorpic from '../assets/lawyer.jpg';
 function Login(){
   const [logit, setLogit] = useState({Email_ID:"  ",password:""});
   const [invalidtext, setInvalidtext] = useState("");

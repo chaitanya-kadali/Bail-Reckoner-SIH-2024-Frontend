@@ -13,13 +13,10 @@ export default function Header() {
   
     <div className="home-head">
       <div className='home-first'>
-        <div className='outer-img'>
-      <div className='home-img'>
         
-      </div>
-      </div>
+      <div className='home-img'>      </div>
       
-    <p className='home-name' onClick={gohome}>Bail Prisoner</p>
+    <p className='home-name' onClick={gohome}>Bail Reckoner</p>
     </div>
     <button className='heads-button' onClick={gochatbot}>Chat Bot</button>
    </div>

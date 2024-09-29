@@ -1,7 +1,7 @@
 import Header from './Header';
 import Footer from './Dashboard comps/Footer';
 
-import MarkdownDisplay from './MarkDownDisplay';
+// import MarkdownDisplay from './MarkDownDisplay';
 import { useState } from 'react';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
