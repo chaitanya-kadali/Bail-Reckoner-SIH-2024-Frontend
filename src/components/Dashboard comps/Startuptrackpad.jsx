@@ -18,12 +18,11 @@ const Startuptrackpad = ({email}) => {
   
   const stages = [
     { title: 'Stage 1: Application Submitted', description: 'Your application has been submitted.' },
-    { title: 'Stage 2: Lawyer', description: 'Your application has been Accepted by Licensing authority' },
-    { title: 'Stage 3: DrugInspector Assigned', description: 'Nearby Drug inspector is assigned for your company' },
-    { title: 'Stage 4: DrugInspector Accepted', description: 'Drug inspector verified and Accepted' },
+    { title: 'Stage 2: Connected with Lawyer', description: 'You have been connected to Lawyer' },
+    { title: 'Stage 3:  Bail details submitted to lawyer', description: 'Case details submitted for the lawyer' },
+    { title: 'Stage 4: Lawyer applied for bail', description: 'Lawyer applied to court for the bail' },
     { title: 'Stage 5: Bail Approved', description: 'Congratulations.Your Bail has been issued.' },
   ];
-  
   useEffect(() => {
     const fetch_status = async () => {
       try {

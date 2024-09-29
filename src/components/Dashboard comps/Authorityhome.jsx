@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import PrintauthorList from './PrintauthorList';
 import axios from 'axios';
-
 import '../styles/Authorityhomee.css';
 
 export default function Authorityhome({email}) {
@@ -124,7 +123,7 @@ export default function Authorityhome({email}) {
   return (
   <div className='auth-total'>  
       <div className='sect-container'>  
-            <p className='auth-hm'>Pending Prisoners</p>
+            <p className='auth-hm'>Bail pending</p>
             <p style={{fontSize:"1.5rem",color:"blue"}}> You Can now Assign the drug inspectors for below startups</p>
             <br/>
             <div>
@@ -138,7 +137,7 @@ export default function Authorityhome({email}) {
             </div>
       </div>
       <div className='sect-container'>
-            <p className='auth-hm'>Bail Rejected Applicants</p>
+            <p className='auth-hm'>Bail accepted</p>
             <p style={{fontSize:"1.5rem",color:"blue"}}> Startups those got rejected during application verification</p>
             <br/>
             <div>
@@ -152,7 +151,7 @@ export default function Authorityhome({email}) {
             </div>
       </div>
         <div className='sect-container'>
-              <p className='auth-hm'>Prisoners under process</p>
+              <p className='auth-hm'>Bail rejected</p>
               <p style={{fontSize:"1.5rem",color:"blue"}}> Waiting for drug inspectors chemical verification and acceptance.</p>
             <br/>
               <div>
@@ -166,7 +165,7 @@ export default function Authorityhome({email}) {
               </div>
         </div>
 
-        <div className='sect-container'>
+        {/* <div className='sect-container'>
               <p className='auth-hm'>Bail granted Prisoners</p>
               <p style={{fontSize:"1.5rem",color:"blue"}}> Chemically verified and Accepted by Drug inspector.</p>
               <br/>
@@ -209,7 +208,7 @@ export default function Authorityhome({email}) {
                   )
                   }
             </div>
-        </div>
+        </div> */}
 
         
   </div>
