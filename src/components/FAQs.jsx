@@ -17,7 +17,7 @@ const FAQ = (props) => {
 
   return (
     <div className="faq-container" style={gradientstyle}>
-      <h1>Frequently Asked Questions - {props.who}</h1>
+      <h1>Frequently Asked Questions - Prisoners</h1>
       {faqData.map((item, index) => (
         <div key={index}>
           <p

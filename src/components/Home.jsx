@@ -41,18 +41,18 @@ function Home()
         window.location.href='/signupdrug'
     }
     
-    const StartupFaqData = [
-        { question: "What is AYUSH?", answer: "AYUSH stands for Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy. It refers to traditional Indian systems of medicine." },
-        { question: "How can I register my AYUSH startup?", answer: "You can register your AYUSH startup through the AYUSH Startup Registration Portal provided by the Ministry of AYUSH." },
-        { question: "What are the eligibility criteria for AYUSH startup funding?", answer: "To be eligible for AYUSH funding, your startup must focus on traditional systems of medicine and wellness, and meet other guidelines specified by the Ministry of AYUSH." },
-        { question: "Are there any grants available for AYUSH startups?", answer: "Yes, there are several grants and funding opportunities available for AYUSH startups, including seed funding and innovation grants from the government." },
-        { question: "What certifications are required for AYUSH products?", answer: "AYUSH products typically require certifications from the AYUSH Ministry and the Food Safety and Standards Authority of India (FSSAI), depending on the product." },
-        { question: "How can I obtain a license for manufacturing AYUSH products?", answer: "You can apply for a manufacturing license through the State Licensing Authority under the Ministry of AYUSH, following the guidelines specific to your system of medicine (e.g., Ayurveda or Homeopathy)." },
-        { question: "What is the AYUSH Export Promotion Council?", answer: "The AYUSH Export Promotion Council helps promote and regulate the export of AYUSH products and services internationally." },
-        { question: "Can AYUSH startups apply for international funding?", answer: "Yes, AYUSH startups can apply for international funding through various global initiatives and funding programs that support traditional and alternative medicine." },
-        { question: "What are the tax benefits for AYUSH startups?", answer: "AYUSH startups may be eligible for tax benefits under the Startup India initiative and specific tax exemptions related to health and wellness sectors." },
-        { question: "What support is provided by the Ministry of AYUSH to startups?", answer: "The Ministry of AYUSH provides a variety of support mechanisms, including mentorship, incubation support, and financial assistance for startups focusing on traditional medicine and wellness." },
-      ];
+    const StartupFaqData=[
+        { question: "What is bail?", answer: "Bail is the temporary release of an accused person awaiting trial, sometimes on condition that a sum of money be lodged to guarantee their appearance in court." },
+        { question: "Who is eligible for bail in India?", answer: "Eligibility for bail depends on the nature of the offense. For bailable offenses, bail is granted as a matter of right. For non-bailable offenses, the decision is at the discretion of the court." },
+        { question: "How can I apply for bail?", answer: "To apply for bail, you must file a bail application in the court where the trial is being held, or in a higher court if necessary. Your lawyer will draft and submit this application on your behalf." },
+        { question: "What are bailable and non-bailable offenses?", answer: "Bailable offenses are those where bail can be granted as a right, while non-bailable offenses require the discretion of the court to grant or deny bail, depending on the circumstances." },
+        { question: "Can I get bail for a non-bailable offense?", answer: "Yes, but it is at the discretion of the court. The court will consider factors like the severity of the offense, likelihood of fleeing, and potential threat to society." },
+        { question: "What conditions can be imposed with bail?", answer: "Conditions may include regular court appearances, surrendering your passport, not leaving the jurisdiction, or providing a surety who will ensure your compliance with bail conditions." },
+        { question: "What is anticipatory bail?", answer: "Anticipatory bail is a direction to release a person on bail, issued even before the person is arrested, when there is a fear of arrest on accusation of a non-bailable offense." },
+        { question: "Can bail be canceled?", answer: "Yes, bail can be canceled if the accused violates any conditions of bail or engages in activities that obstruct the course of justice, such as tampering with evidence or intimidating witnesses." },
+        { question: "What is the procedure for getting anticipatory bail?", answer: "You need to apply for anticipatory bail before arrest by filing an application in the Sessions Court or High Court, explaining the reason for apprehending arrest." },
+        { question: "What happens if my bail application is rejected?", answer: "If your bail application is rejected by a lower court, you can appeal to a higher court, such as the Sessions Court, High Court, or even the Supreme Court, depending on the case." },
+    ];
 
 
     return(
