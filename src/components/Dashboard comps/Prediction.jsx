@@ -7,7 +7,7 @@ const BailPrediction = () => {
   const handlePredict = () => {
     setIsLoading(true);
     setTimeout(() => {
-      setPrediction(78);
+      setPrediction(84);
       setIsLoading(false);
     }, 2000);
   };
@@ -25,7 +25,7 @@ const BailPrediction = () => {
 
       {prediction !== null && (
         <div style={styles.prediction}>
-          <h2>Your Predicted Acceptance Rate: {prediction}%</h2>
+          <h2>Your Predicted Bail Approval Rate: {prediction}%</h2>
         </div>
       )}
     </div>
@@ -38,7 +38,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100vh',
+    height: '60vh',
     backgroundColor: '#ffffff',
     color: '#000000',
     padding: '20px',
@@ -78,6 +78,7 @@ const styles = {
     borderRadius: '10px',
     boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
     fontSize: '1.8rem',
+    color:"green"
   },
 };
 
