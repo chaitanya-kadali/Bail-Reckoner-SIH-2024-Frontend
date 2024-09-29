@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 // Import your local images
-import Image1 from '../assets/bannermain.jpg';
-import Image4 from '../assets/bannerimg1.jpg';
-import Image3 from '../assets/bannerimg3.jpg';
+// import Image1 from '../assets/bannermain.jpg';
+// import Image4 from '../assets/bannerimg1.jpg';
+// import Image3 from '../assets/bannerimg3.jpg';
 import '../components/styles/Images.css'
 const Images = () => {
   // Array of imported images
-  const images = [  Image1,Image3,Image4];
+  const images = [ "","",""];
 
   // State to keep track of the current image index
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,7 +43,7 @@ const Images = () => {
         &#10094; {/* Left Arrow */}
       </button>
 
-      <img id="slide-img" src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+      {/* <img id="slide-img" src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} /> */}
 
       <button className="arrow next" onClick={nextSlide}>
         &#10095; {/* Right Arrow */}

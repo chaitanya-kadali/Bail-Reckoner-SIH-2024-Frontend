@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import Header from './Header';
 import Footer from './Dashboard comps/Footer';
-import authorpic from '../assets/loginauthority.jpg';
+import authorpic from '../assets/lawyer.jpg';
 function  Authoritysignup() {
   const [Licensedata, setLicensedata] = useState(
     {name:"",Email_ID:"" ,password:"",mobile_no:"",designation:"", Qualification:"",OrderReferenceNo:""

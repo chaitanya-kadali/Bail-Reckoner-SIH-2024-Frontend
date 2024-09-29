@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import Header from './Header';
 import Footer from './Dashboard comps/Footer';
-import startuppic from '../assets/loginstartup.jpg';
+import startuppic from '../assets/lawyer.jpg';
 function Startupsignup() {
   const [startUpdata, setStartUpdata] = useState(
     {Email_ID:"",password:"",companyName : "",address : "",city:"",pinCode:null,

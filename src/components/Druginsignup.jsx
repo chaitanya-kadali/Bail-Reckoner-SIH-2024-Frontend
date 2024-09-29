@@ -3,7 +3,7 @@ import React,{ useState } from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
 import Header from './Header';
-import drugpic from '../assets/logindrug.jpg';
+import drugpic from '../assets/lawyer.jpg';
 // import Footer from './Dashboard comps/Footer';
 
 function Druginsignup(){

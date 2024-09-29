@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import Header from './Header';
 import Footer from './Dashboard comps/Footer';
-import doctorpic from '../assets/logindoctor.jpg';
+import doctorpic from '../assets/lawyer.jpg';
 function Doctorsignup() {
   const [doctordata, setDoctordata] = useState(
     {name:"",Email_ID:"",password:"",district:"",state:"",phone_number:"" });
