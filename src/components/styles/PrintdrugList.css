@@ -1,14 +1,17 @@
 
 .Drugp-container {
-    max-width: 50vw;
+  width: 80vw;
     margin: 0 auto;
     font-family: Arial, sans-serif;
     color:rgb(255, 255, 255);
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: #094660; */
   }
   
   .Drugp-item {
     margin-bottom: 15px;
-    
   }
   
   .Drugp-header {
@@ -17,13 +20,26 @@
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    height:10vh;
+    height: 30vh;
+    font-size: 1.2rem;
+    width: 35vw;
+    flex: 0 0 calc(50% - 10px);
+    align-items: center;
   }
   .Drugp-header:hover{
     background-color: rgb(4, 25, 60);
     color:white;
   }
   
+
+  .prof-img{
+    background-image: url("./empty_profile.png");
+    background-size: cover; /* Ensures the whole image is visible */
+    background-repeat: no-repeat;
+    height:50%;
+    width:25%;
+    margin:10px;
+  }
   
   .Drugp-name {
     font-weight: bold;
