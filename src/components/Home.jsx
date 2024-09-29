@@ -1,7 +1,7 @@
 import './styles/Home.css';
-import startup from '../assets/startup.svg';
-import authori from '../assets/lauthority.jpg';
-import drugins from '../assets/drugins.svg';
+import prisoner from '../assets/prisoner.png';
+import judge from '../assets/judge.jpg';
+import lawyer from '../assets/lawyer.jpg';
 import Header from './Header';
 import FAQ from './FAQs';
 import Footer from './Dashboard comps/Footer';
@@ -58,28 +58,27 @@ function Home()
     return(
         <div className='the-home'>
        <Header/>
-       <Images/>
+       {/* <Images/> */}
         <div className="home-main">
            <div className="home-main-startup">
-               <img id="home-main-img" src={startup}/>
-               <p id="type-title">Startup Applicant</p>
+               <img id="home-main-img" src={prisoner}/>
+               <p id="type-title">Prisoner</p>
                <button id="home-main-signin" onClick={goStartup} >Sign Up</button>
                <button id="home-main-login" onClick={startupLogin}>Login</button>
            </div>
            <div className="home-main-auth">
-               <img id="home-main-img2" src={authori}/>
-               <p id="type-title">Licensing Authority</p>
+               <img id="home-main-img2" src={judge}/>
+               <p id="type-title">Judge</p>
                <button id="home-main-signin" onClick={goauth} >Sign Up</button>
                <button id="home-main-login" onClick={authoriLogin}>Login</button>
            </div>
            <div className="home-main-drug">
-               <img id="home-main-img3" src={drugins}/>
-               <p id="type-title">Drug Inspector</p>
+               <img id="home-main-img3" src={lawyer}/>
+               <p id="type-title">Lawyer</p>
                <button id="home-main-signin" onClick={godrug} >Sign Up</button>
                <button id="home-main-login" onClick={drugLogin}>Login</button>
            </div>
            </div>
-           <center><button id="gohometwo" onClick={gohometwo}>Are you a Farmer/doctor Wanna collaborate?</button></center>
         <div className="home-faq">
             <FAQ faqdata={StartupFaqData} who={"Ayush StartUps"} />
         </div>

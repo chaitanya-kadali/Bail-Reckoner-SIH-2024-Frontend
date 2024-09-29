@@ -5,7 +5,6 @@ import Doctorsignup from './components/Doctorsignup.jsx';
 import Home from './components/Home.jsx';
 import Startupsignup from './components/Startupsignup.jsx';
 import Farmersignup from './components/Farmersignup.jsx';
-import Hometwo from './components/Hometwo.jsx';
 import Startupdashboard from './components/Dashboard comps/Startupdashboard.jsx';
 import Authoritydash from './components/Dashboard comps/Authoritydash.jsx';
 import Doctordash from './components/Dashboard comps/Doctordash.jsx';
@@ -20,7 +19,6 @@ function App() {
     <BrowserRouter>
    <Routes>
     <Route path='/' element={<Home/>} />
-    <Route path='/hometwo' element={<Hometwo/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/signupstartup' element={<Startupsignup/>}/>
     <Route path='/signupauthority' element={<Authoritysignup/>}/>

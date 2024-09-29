@@ -19,7 +19,7 @@ export default function Header() {
       </div>
       </div>
       
-    <p className='home-name' onClick={gohome}>Ayush 2.0</p>
+    <p className='home-name' onClick={gohome}>Bail Prisoner</p>
     </div>
     <button className='heads-button' onClick={gochatbot}>Chat Bot</button>
    </div>

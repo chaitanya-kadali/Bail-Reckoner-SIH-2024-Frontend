@@ -124,12 +124,12 @@ export default function Authorityhome({email}) {
   return (
   <div className='auth-total'>  
       <div className='sect-container'>  
-            <p className='auth-hm'>Pending Startups</p>
+            <p className='auth-hm'>Pending Prisoners</p>
             <p style={{fontSize:"1.5rem",color:"blue"}}> You Can now Assign the drug inspectors for below startups</p>
             <br/>
             <div>
                 { pendingStartupEmails.length === 0 ? (
-                    <h1>No Startups found</h1>
+                    <h1>No Prisoner</h1>
                   ):(
                     < PrintauthorList startupmails={pendingStartupEmails} 
                     type={'pending'}/>
@@ -138,7 +138,7 @@ export default function Authorityhome({email}) {
             </div>
       </div>
       <div className='sect-container'>
-            <p className='auth-hm'>Rejected Startups</p>
+            <p className='auth-hm'>Bail Rejected Applicants</p>
             <p style={{fontSize:"1.5rem",color:"blue"}}> Startups those got rejected during application verification</p>
             <br/>
             <div>
@@ -152,7 +152,7 @@ export default function Authorityhome({email}) {
             </div>
       </div>
         <div className='sect-container'>
-              <p className='auth-hm'>Drug Inspector Assigned Startups</p>
+              <p className='auth-hm'>Prisoners under process</p>
               <p style={{fontSize:"1.5rem",color:"blue"}}> Waiting for drug inspectors chemical verification and acceptance.</p>
             <br/>
               <div>
@@ -167,7 +167,7 @@ export default function Authorityhome({email}) {
         </div>
 
         <div className='sect-container'>
-              <p className='auth-hm'>Drug Inspector Accepted Startups</p>
+              <p className='auth-hm'>Bail granted Prisoners</p>
               <p style={{fontSize:"1.5rem",color:"blue"}}> Chemically verified and Accepted by Drug inspector.</p>
               <br/>
               <div>

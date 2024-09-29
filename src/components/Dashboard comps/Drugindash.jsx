@@ -86,9 +86,9 @@ useEffect(() => {
   }, []); // Run only once when the component mounts
 
         
-if(tokenvalidation===false){
-    return(<><h1>Error 404 </h1> <p>Token is not received</p></>)
-}
+// if(tokenvalidation===false){
+//     return(<><h1>Error 404 </h1> <p>Token is not received</p></>)
+// }
 if (loading) {
     return <h1>Loading...</h1>;
 }
@@ -97,7 +97,7 @@ if (loading) {
     <>
     <Header/>
     <div id="drug-dash-id"> 
-    <p className='drug-dash-head'>DrugInspector Dashboard</p>
+    <p className='drug-dash-head'>Lawyer Dashboard</p>
     </div>
    
     <div>
