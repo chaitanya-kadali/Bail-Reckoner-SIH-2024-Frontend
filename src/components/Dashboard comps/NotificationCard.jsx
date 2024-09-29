@@ -7,7 +7,7 @@ const NotificationCard = ({ data }) => {
     borderRadius: '10px',
     padding: '20px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-    maxWidth: '400px',
+    width: '60vw',
     margin: '20px auto',
     fontFamily: 'Arial, sans-serif',
   };
@@ -31,11 +31,11 @@ const NotificationCard = ({ data }) => {
   return (
     <div style={cardStyle}>
       <div style={titleStyle}>Notification</div>
-      <p style={detailStyle}><strong>LA Email:</strong> {data.LA_Email}</p>
-      <p style={detailStyle}><strong>Startup Company:</strong> {data.Startup_Company}</p>
-      <p style={detailStyle}><strong>Startup Email:</strong> {data.Startup_Email}</p>
-      <p style={detailStyle}><strong>Date:</strong> {data.date}</p>
-      <p style={notificationStyle}>"{data.notification}"</p>
+      <p style={detailStyle}><strong>Prisoner Name :</strong> {data.name}</p>
+      <p style={detailStyle}><strong>Charges :</strong> {data.charges}</p>
+      <p style={detailStyle}><strong>Ground for Bail :</strong> {data.ground}</p>
+      <p style={detailStyle}><strong>Date of arrest :</strong> {data.date}</p>
+      <p style={notificationStyle}>"{"its been 40 days.Please check out my bail petition"}"</p>
     </div>
   );
 };
