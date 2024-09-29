@@ -1,7 +1,5 @@
 import Header from './Header';
 import Footer from './Dashboard comps/Footer';
-
-// import MarkdownDisplay from './MarkDownDisplay';
 import { useState } from 'react';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
@@ -14,7 +12,7 @@ const systemMessage = {
 function AiChatBot() {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm a Aayush 2.0 ai chat-model (powered by Gemini Ai)! Ask me anything!",
+      message: "Hello, I'm a Bail Reckoner ai chat-model (powered by Gemini Ai)! Ask me anything!",
       sentTime: 'just now',
       sender: 'Gemini Ai',
     },
@@ -54,8 +52,6 @@ function AiChatBot() {
       });
   
       const data = await response.json();
-
-      // const testing = `<MarkdownDisplay data={data.data} />`;
       setMessages([...chatMessages, {
         message: data.data,
         sender: 'Assistant',
@@ -76,7 +72,7 @@ function AiChatBot() {
           <ChatContainer>
             <MessageList
               scrollBehavior="smooth"
-              typingIndicator={isTyping ? <TypingIndicator content="Aayush Chatbot is typing" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="Bail Reckoner Chatbot is typing" /> : null}
             >
               {messages.map((message, i) => (
                 <Message key={i} model={message} />
