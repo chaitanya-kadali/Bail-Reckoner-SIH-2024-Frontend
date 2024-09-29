@@ -142,11 +142,11 @@ const handleInputChange = (e) => {
                                       {visibleIndex === index && (
                                         <div className="author-details">
                                           <div className='author-details-inner'>
-                                              <p>Email: {details.caseNumber}</p>
-                                              <p>GST no: {details.charges}</p>
-                                              <p>PAN no: {details.courtName}</p>
-                                              <p>Website: {details.dateOfArrest}</p>
-                                              <p>Certificate Issuing Authority: {details.groundsForBail}</p>
+                                              <p>Case Number: {details.caseNumber}</p>
+                                              <p>Charges : {details.charges}</p>
+                                              <p>Court Name: {details.courtName}</p>
+                                              <p>Date of arrest : {details.dateOfArrest}</p>
+                                              <p>Grounds for Bail: {details.groundsForBail}</p>
                                           
                                           </div>
                               
@@ -157,7 +157,7 @@ const handleInputChange = (e) => {
                                                   className='author-btn-assign'
                                                   onClick={()=>{pendingAssign(eachemailobj.Email_ID)}}
                                                 >
-                                                  Assign Drug Inspector
+                                                  Approve Bail
                                                 </button>
                                                 <button className='author-btn-reject' onClick={rejectclick}>
                                                   Reject
@@ -179,14 +179,7 @@ const handleInputChange = (e) => {
                                                 )}
                                               </>
                                             )}
-                              
-                                            {type === 'accepted' && (
-                                              <>
-                                                <button className='author-btn-approve' onClick={()=>{approveClick(eachemailobj.Email_ID)}}>
-                                                  Approve License
-                                                </button>
-                                              </>
-                                            )}
+                            
                                           </div>
                                         </div>
                                       )}

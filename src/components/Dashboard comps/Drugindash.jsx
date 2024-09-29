@@ -81,7 +81,7 @@ const containerStyle = {
   flexWrap: "wrap",
   justifyContent: "space-between",
   width: "90vw",
-  backgroundColor: "rgb(79, 196, 196)",
+  backgroundColor: "#a1e2ebb1",
   borderRadius: "10px",
   alignItems: "center",
   padding: "10px",
