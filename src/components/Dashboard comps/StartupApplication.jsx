@@ -7,10 +7,8 @@ function StartupSingup({ email }) {
   const cn_email = email || "not passed";
 
   const [startupdata, setStartupdata] = useState({
-    Email:cn_email, PANno:"", GSTno:"",
-    websiteAddress:"",certificateNo:"",CompanyDOI:"",
-    IssuuingAuthority:"",IE_code:"",IE_DOI:"" });
-
+    caseno:"FIR123456",charges:"Section 420 IPC (Cheating)",
+    courtname:"District Court, Delhi",Dateofarrest:"2023-08-15",groundsforbail:"First-time offender, sole breadwinner of family." });
   const [originalData, setOriginalData] = useState({});
   const [editing, setEditing] = useState();
   const [userExists, setUserExists] = useState(false); // Flag to track if the user data exists
@@ -174,23 +172,23 @@ function makeiteditable(){
                 </div>
                 <div className="form-group">
                     <label>(a) Case No.</label>
-                    <input type="text"readOnly={!editing} name="certificateNo" value={startupdata.certificateNo ||""} onChange={handleChange} placeholder="Enter the Case No"/>
+                    <input type="text"readOnly={!editing} name="caseno" value={startupdata.caseno||""} onChange={handleChange} placeholder="Enter the Case No"/>
                 </div>
                 <div className="form-group">
                     <label>(b)Charges</label>
-                    <input type="text"readOnly={!editing} name="CompanyDOI" value={startupdata.CompanyDOI ||""} onChange={handleChange} placeholder="Enter Charges"/>
+                    <input type="text"readOnly={!editing} name="charges" value={startupdata.charges||""} onChange={handleChange} placeholder="Enter Charges"/>
                 </div>
                 <div  className="form-group">
                     <label>(c)CourtName</label>
-                    <input type="text" readOnly={!editing}name="IssuuingAuthority" value={startupdata.IssuuingAuthority ||""}onChange={handleChange} placeholder="Enter the court name" />
+                    <input type="text" readOnly={!editing}name="courtname" value={startupdata.courtname ||""}onChange={handleChange} placeholder="Enter the court name" />
                     </div>
                 <div className="form-group">
                     <label>(a)Date of Arrest</label>
-                    <input type="date" readOnly={!editing} name="IE_code" value={startupdata.IE_code ||""} onChange={handleChange} />
+                    <input type="date" readOnly={!editing} name="Dateofarrest" value={startupdata.Dateofarrest||""} onChange={handleChange} />
                 </div>
                 <div className="form-group">
                     <label>(b)Grounds for Bail</label>
-                    <input type="text" name="IE_DOI" readOnly={!editing} value={startupdata.IE_DOI ||""} onChange={handleChange} placeholder="Enter Grounds for bail"/>
+                    <input type="text" name="groundsforbail" readOnly={!editing} value={startupdata.groundsforbail ||""} onChange={handleChange} placeholder="Enter Grounds for bail"/>
                 </div>
                
                 <div>

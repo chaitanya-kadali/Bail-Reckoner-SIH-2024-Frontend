@@ -23,68 +23,67 @@ const Startuptrackpad = ({email}) => {
     { title: 'Stage 4: Lawyer applied for bail', description: 'Lawyer applied to court for the bail' },
     { title: 'Stage 5: Bail Approved', description: 'Congratulations.Your Bail has been issued.' },
   ];
-  useEffect(() => {
-    const fetch_status = async () => {
-      try {
-        const Startup_Email = email;
-        const response = await axios.post('http://localhost:5002/api/status-trackpad', { Startup_Email });
-        const isSuccess = response.data.success;
-        if (isSuccess) {
-          const recieved = response.data.statusInfo;
-          console.log("Received data: ", recieved[0]);
-          setStatusInfo(recieved[0]); // Asynchronous update
-        }
-      } catch (error) {
-        if (error.response) {
-          console.error("Error Response Data:", error.response.data);
-          console.error("Error Response Status:", error.response.status);
-        } else if (error.request) {
-          console.error("No response received:", error.request);
-        } else {
-          console.error("Request error:", error.message);
-        }
-      }
-    };
+  // useEffect(() => {
+  //   const fetch_status = async () => {
+  //     try {
+  //       const Startup_Email = email;
+  //       const response = await axios.post('http://localhost:5002/api/status-trackpad', { Startup_Email });
+  //       const isSuccess = response.data.success;
+  //       if (isSuccess) {
+  //         const recieved = response.data.statusInfo;
+  //         console.log("Received data: ", recieved[0]);
+  //         setStatusInfo(recieved[0]); 
+  //       }
+  //     } catch (error) {
+  //       if (error.response) {
+  //         console.error("Error Response Data:", error.response.data);
+  //         console.error("Error Response Status:", error.response.status);
+  //       } else if (error.request) {
+  //         console.error("No response received:", error.request);
+  //       } else {
+  //         console.error("Request error:", error.message);
+  //       }
+  //     }
+  //   };
   
-    fetch_status();
-  }, []); // Run only once when the component mounts
+  //   fetch_status();
+  // }, []);
   
-  // Use another useEffect to handle updating the currentStage based on statusInfo
-  useEffect(() => {
-    const update_currentStage = () => {
-      if (!statusInfo) return;
   
-      // If the application is rejected, set the current stage to -1 (negative for red) to signify cancellation
-      if (statusInfo.ApplicationRejected) {
-        setCurrentStage(-2); // Rejected before drug inspector assigned
-      } else if (statusInfo.isDrugInspectorRejected) {
-        setCurrentStage(-4); // Rejected by drug inspector
-      } else if (statusInfo.AplicationAccepted) {
-        // Continue with normal accepted stages
-        if (statusInfo.isLicensed) {
-          setCurrentStage(5); // License approved
-        } else if (statusInfo.isDrugInspectorAccepted) {
-          setCurrentStage(4); // Drug inspector accepted
-        } else if (statusInfo.isDrugInspectorAssigned) {
-          setCurrentStage(3); // Drug inspector assigned
-        } else {
-          setCurrentStage(2); // Application accepted
-        }
-      } else if (statusInfo.FilledApplication) {
-        setCurrentStage(1); // Application submitted
-      } else {
-        setCurrentStage(0); // No application filled yet
-      }
-    };
+  // useEffect(() => {
+  //   const update_currentStage = () => {
+  //     if (!statusInfo) return;
   
-    // Update the stage whenever statusInfo changes
-    update_currentStage();
-  }, [statusInfo]); // Re-run whenever statusInfo changes
+  //     if (statusInfo.ApplicationRejected) {
+  //       setCurrentStage(-2); 
+  //     } else if (statusInfo.isDrugInspectorRejected) {
+  //       setCurrentStage(-4);
+  //     } else if (statusInfo.AplicationAccepted) {
+       
+  //       if (statusInfo.isLicensed) {
+  //         setCurrentStage(5); 
+  //       } else if (statusInfo.isDrugInspectorAccepted) {
+  //         setCurrentStage(4); 
+  //       } else if (statusInfo.isDrugInspectorAssigned) {
+  //         setCurrentStage(3); 
+  //       } else {
+  //         setCurrentStage(2); 
+  //       }
+  //     } else if (statusInfo.FilledApplication) {
+  //       setCurrentStage(1); 
+  //     } else {
+  //       setCurrentStage(0); 
+  //     }
+  //   };
   
-  // Log the current stage whenever it changes
+   
+  //   update_currentStage();
+  // }, [statusInfo]);
+  
+ 
   useEffect(() => {
     console.log("Current Stage is: ", currentStage);
-  }, [currentStage]); // Log currentStage whenever it changes
+  }, [currentStage]); 
   
 
   const isCancelled = currentStage < 0;

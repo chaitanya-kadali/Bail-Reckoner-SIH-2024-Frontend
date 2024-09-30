@@ -26,4 +26,38 @@
     width:100%;
     font-weight: bold;
   }
-  
+  .law-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: rgba(224, 219, 213, 0.716);
+    height: 50px;
+    align-items: center;
+  }
+  .law-nav-item{
+    margin-right:40px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    background-color: white;
+    padding: 0 15px;
+    border-radius: 5px;
+  }
+  .law-nav-item:hover{
+      font-weight: bold;
+      font-size: 1.4rem;
+     
+  }
+  #logout-law{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 5px;
+  }
+  .law-nav-sec{
+ display: flex;
+ flex-direction: row;
+height:70%;
+align-items: center;
+  }
+  #law-home{
+    margin-left:50px;
+  }

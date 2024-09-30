@@ -2,10 +2,12 @@ import React,{useEffect,useState} from 'react';
 import PrintdrugList from './PrintdrugList';
 import '../styles/Drugindash.css';
 import Header from '../Header';
+import Logout from './Logout';
+import Extrafeatures from './Extrafeatures';
 
 export default function Drugindash() {
 
-
+const [number, setnumber] = useState(1);
 const data = [
   {
     name: "Ravi Kumar",
@@ -93,6 +95,16 @@ const containerStyle = {
     <div id="drug-dash-id"> 
     <p className='drug-dash-head'>Lawyer Dashboard</p>
     </div>
+    <div className='law-nav'>
+    <p className="drug-nav" id="law-home" onClick={()=>{setnumber(1)}}>Home</p>
+    <div className='law-nav-sec'>
+        <p className="drug-nav" onClick={()=>{setnumber(2)}}>Communicate with Judge</p>
+        <div>
+          <Logout/>
+          </div>
+          </div>
+        </div>
+        { number==1&&
  <center> 
 <div className='drug-con'>
   <p id="drug-top"> Pending for judge review</p>
@@ -108,7 +120,12 @@ const containerStyle = {
   <p id="drug-top">Judge Rejected Bail</p>
   <PrintdrugList data={data3} />
     </div>
-    </center> 
+    </center> }
+    {
+      number==2&&
+      <Extrafeatures/>
+    }
     </>
+  
   )
 }

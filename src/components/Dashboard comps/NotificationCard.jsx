@@ -31,6 +31,7 @@ const NotificationCard = ({ data }) => {
   return (
     <div style={cardStyle}>
       <div style={titleStyle}>Notification</div>
+      <p style={detailStyle}><strong>Lawyer Name:</strong> {data.lname}</p>
       <p style={detailStyle}><strong>Prisoner Name :</strong> {data.name}</p>
       <p style={detailStyle}><strong>Charges :</strong> {data.charges}</p>
       <p style={detailStyle}><strong>Ground for Bail :</strong> {data.ground}</p>

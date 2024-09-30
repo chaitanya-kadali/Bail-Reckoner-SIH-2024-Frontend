@@ -6,7 +6,7 @@ import NotificationCard from './NotificationCard';
 export default function Authoritynotification({email}) {
   
   const [notifications, setnotifications] = useState([]);
-  const items=[{name:"Ravi Kumar",
+  const items=[{lname:"M.Madhusudhan Rao",name:"Ravi Kumar",
 charges:"Section 420 IPC (Cheating)",
 ground:"First-time offender, sole breadwinner of family.",
 date:"2023-08-15"}];

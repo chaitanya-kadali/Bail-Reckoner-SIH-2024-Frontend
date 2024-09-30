@@ -88,7 +88,6 @@ export default function Authoritydash() {
         <div className='drug-main-first'>
         <p className="drug-nav" onClick={gohome}>Home</p>
         <p className="drug-nav" onClick={gonotification}>Notifications</p>
-        {/* <p className="drug-nav" onClick={goauthendicate}>Authendicate Drug Inscpector</p> */}
         </div>
         <div>
         <Logout/> 

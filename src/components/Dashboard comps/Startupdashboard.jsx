@@ -123,13 +123,7 @@ export default function Startupdashboard() {
                 onClick={() => { goApplication(); setActiveTab('Application'); }}
             >
                 Bail Application
-            </p> 
-             <p 
-                className={activeTab === 'Ayush' ? 'active-tab' : ''} 
-                onClick={() => { goAyush(); setActiveTab('Ayush'); }}
-            >
-            Lawyer Communication 
-                       </p>
+            </p>
            <p 
                 className={activeTab === 'PeerForum' ? 'active-tab' : ''} 
                 onClick={() => { goPeerForum(); setActiveTab('PeerForum'); }}

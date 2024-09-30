@@ -2,7 +2,7 @@ import React ,{useState,useEffect}from 'react'
 import "../styles/Inscommunication.css";
 import axios from 'axios';
 export default function Inscommunication({email}) {
-    const [isEnabled, setIsEnabled] = useState(false); 
+    const [isEnabled, setIsEnabled] = useState(true); 
     const [clicks, setClicks] = useState(false);
     const [feedback,setFeedback]=useState([]);
 
