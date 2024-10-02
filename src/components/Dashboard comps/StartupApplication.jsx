@@ -163,8 +163,8 @@ function makeiteditable(){
             <div className="header">
                 <p style={{color : 'rgb(6, 6, 87)', fontSize:'2rem'}}>Applicantion Form</p>
             </div>
-             {userExists ? <p style={{color:"green",fontSize:"0.9rem"}}>You have already submitted the data.<br/>You can edit now</p>
-                         : <p style={{color:"red",fontSize:"0.9rem"}}>You haven't submitted the form yet. Please fill the details.</p> }
+             {/* {userExists ? <p style={{color:"green",fontSize:"0.9rem"}}>You have already submitted the data.<br/>You can edit now</p>
+                         : <p style={{color:"red",fontSize:"0.9rem"}}>You haven't submitted the form yet. Please fill the details.</p> } */}
             <form onSubmit={handleSubmit}>
             <div className="form-group">
                     <label style={{fontSize:'1.5rem'}} >Case Details</label>

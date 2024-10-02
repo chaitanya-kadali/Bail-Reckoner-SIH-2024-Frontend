@@ -53,7 +53,9 @@ function Home()
         { question: "What is the procedure for getting anticipatory bail?", answer: "You need to apply for anticipatory bail before arrest by filing an application in the Sessions Court or High Court, explaining the reason for apprehending arrest." },
         { question: "What happens if my bail application is rejected?", answer: "If your bail application is rejected by a lower court, you can appeal to a higher court, such as the Sessions Court, High Court, or even the Supreme Court, depending on the case." },
     ];
-
+    const handleRedirect = () => {
+        window.open("https://youtu.be/Hp4MiQTtvp8?si=uIzEcKf4K1K4nBYK", "_blank");
+      };
 
     return(
         <div className='the-home'>
@@ -79,6 +81,12 @@ function Home()
                <button id="home-main-login" onClick={drugLogin}>Login</button>
            </div>
            </div>
+           
+           <center>
+      <p onClick={handleRedirect} style={{ cursor: 'pointer', color: 'blue', fontSize:"1.3rem" }}>
+        Click here to watch the demo video
+      </p>
+          </center>
         <div className="home-faq">
             <FAQ faqdata={StartupFaqData} who={"Ayush StartUps"} />
         </div>
