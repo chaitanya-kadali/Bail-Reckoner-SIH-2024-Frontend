@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import Header from './Header';
 import Footer from './Dashboard comps/Footer';
-import startuppic from '../assets/lawyer.jpg';
+import prisonerpic from '../assets/prisoner.png';
 function Startupsignup() {
   const [startUpdata, setStartUpdata] = useState(
     {Email_ID:"",password:"",companyName : "",address : "",city:"",pinCode:null,
@@ -93,7 +93,7 @@ function Startupsignup() {
   
     if (response.data.success) {
       alert("Successfully Signed Up");
-      window.location.href = `/login?value=${'startup'}`;
+      window.location.href = `/login?value=${'prisoner'}`;
     } else {
       alert("Invalid Details. Please try again!");
       throw response;
@@ -139,7 +139,7 @@ function Startupsignup() {
       <>
       <Header/>
       <div className='start-flex'>
-        <img src={startuppic} id='start-pic-id'/>
+        <img src={prisonerpic} id='start-pic-id'/>
       <form id="startup-form" onSubmit={onSubmit}>
         <div className="start-up-head1">
           <div className="start-up-head2">

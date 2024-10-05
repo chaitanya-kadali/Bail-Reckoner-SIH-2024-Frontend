@@ -193,7 +193,7 @@ const handleFileChange = (e) => {
         if(response.data.success)
         {
           alert("Successfully registered !");
-          window.location.href = `/login?value=${druginspector}`;
+          window.location.href = `/login?value=${'lawyer'}`;
         }
         else{
           alert("Please Try again")

@@ -14,31 +14,27 @@ function Home()
     let authority='authority';
     function startupLogin()
     {
-        window.location.href = `/login?value=${startupqr}`;
+        window.location.href = `/login?value=${'prisoner'}`;
     }
     function authoriLogin()
     {
-        window.location.href = `/login?value=${authority}`;
+        window.location.href = `/login?value=${'judge'}`;
     }
     function drugLogin()
     {
-        window.location.href = `/login?value=${druginspector}`;
+        window.location.href = `/login?value=${'lawyer'}`;
     }
     function goStartup()
     {
-        window.location.href=`/signupstartup`;
-    }
-    function gohometwo()
-    {
-        window.location.href=`/hometwo`;
+        window.location.href=`/signupprisoner`;
     }
     function goauth()
     {
-        window.location.href='/signupauthority'
+        window.location.href='/signupjudge'
     }
     function godrug()
     {
-        window.location.href='/signupdrug'
+        window.location.href='/signuplawyer'
     }
     
     const StartupFaqData=[

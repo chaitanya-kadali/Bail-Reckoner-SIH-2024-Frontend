@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import Header from './Header';
 import Footer from './Dashboard comps/Footer';
-import authorpic from '../assets/lawyer.jpg';
+import judgepic from '../assets/judge.jpg';
 function  Authoritysignup() {
   const [Licensedata, setLicensedata] = useState(
     {name:"",Email_ID:"" ,password:"",mobile_no:"",designation:"", Qualification:"",OrderReferenceNo:""
@@ -121,7 +121,7 @@ const handleFileChange = (e) => {
     if(response.data.success)
     {
       alert("Successfully Signed in!");
-      window.location.href = `/login?value=${"authority"}`;
+      window.location.href = `/login?value=${"judge"}`;
     }
     else{
       alert("Please Try again")
@@ -162,7 +162,7 @@ const handleFileChange = (e) => {
 
       <Header/>
       <div className='author-flex'>
-        <img src={authorpic} id="author-pic"/>
+        <img src={judgepic} id="author-pic"/>
       <form id="authority-sign-id" onSubmit={handleSubmit}>
       <div className="authority-sign-head1">
           <div className="authority-sign-head2">

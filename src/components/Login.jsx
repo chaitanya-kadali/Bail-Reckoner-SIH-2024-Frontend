@@ -3,11 +3,9 @@ import React,{ useState,useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import Header from './Header';
-import doctorpic from '../assets/lawyer.jpg';
-import startuppic from '../assets/lawyer.jpg';
-import farmerpic from '../assets/lawyer.jpg';
-import drugpic from '../assets/lawyer.jpg';
-import authorpic from '../assets/lawyer.jpg';
+import lawyerpic from '../assets/lawyer.jpg';
+import judgepic from '../assets/judge.jpg';
+import prisonerpic from '../assets/prisoner.png';
 function Login(){
   const [logit, setLogit] = useState({Email_ID:"  ",password:""});
   const [invalidtext, setInvalidtext] = useState("");
@@ -65,17 +63,13 @@ const handelSubmit =async(e)=>{
  
 }
 useEffect(() => {
-  
- if(usertype==='doctor')
-   setreplacepic(doctorpic);
- else if(usertype==='druginspector') 
-   setreplacepic(drugpic);
- else if(usertype==='farmer') 
-   setreplacepic(farmerpic);
-  else if(usertype==='authority')
-    setreplacepic(authorpic);
- else if(usertype==='startup')
-    setreplacepic(startuppic); 
+  console.log(usertype);
+ if(usertype==='prisoner')
+   setreplacepic(prisonerpic);
+ else if(usertype==='judge') 
+   setreplacepic(judgepic);
+ else if(usertype==='lawyer') 
+   setreplacepic(lawyerpic);
 }, []);
   return(
       <div className='login-total'>

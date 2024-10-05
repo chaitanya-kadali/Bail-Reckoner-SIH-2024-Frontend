@@ -20,14 +20,14 @@ function App() {
    <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/login' element={<Login/>}/>
-    <Route path='/signupstartup' element={<Startupsignup/>}/>
-    <Route path='/signupauthority' element={<Authoritysignup/>}/>
-    <Route path='/signupdrug' element={<Druginsignup/>}/>
+    <Route path='/signupprisoner' element={<Startupsignup/>}/>
+    <Route path='/signupjudge' element={<Authoritysignup/>}/>
+    <Route path='/signuplawyer' element={<Druginsignup/>}/>
     <Route path='/signupdoctor' element={<Doctorsignup/>}/>
     <Route path='/signupfarmer' element={<Farmersignup/>}/>
-    <Route path='/startupdash' element={<Startupdashboard/>}/>
-    <Route path='/authoritydash' element={<Authoritydash/>}/>
-    <Route path='/druginspectordash' element={<Drugindash/>}/>
+    <Route path='/prisonerdash' element={<Startupdashboard/>}/>
+    <Route path='/judgedash' element={<Authoritydash/>}/>
+    <Route path='/lawyerdash' element={<Drugindash/>}/>
     <Route path='/doctordash' element={<Doctordash/>}/>
     <Route path='/farmerdash' element={<Farmerdash/>}/>
     <Route path='/chatbot' element={<AiChatBot/>}/>
