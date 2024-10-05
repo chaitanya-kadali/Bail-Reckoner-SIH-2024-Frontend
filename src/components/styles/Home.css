@@ -139,12 +139,11 @@ body{
     background-color:rgb(5, 69, 157);
     color:white;
     width:300px;
-    height:100px;
+    height:70px;
     font-weight: bold;
-    font-size:1.4rem;
-    border-radius: 30px;
+    font-size:1.3rem;
+    border-radius: 15px;
     cursor:pointer;
     transition:  1s;
-    padding-top: 7px;
     margin-top: 15px;
 }
